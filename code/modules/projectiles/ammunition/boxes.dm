@@ -8,6 +8,10 @@
 	max_ammo = 6
 	multiple_sprites = 1
 
+/obj/item/ammo_magazine/speedloader/xo
+	labels = list("custom")
+	ammo_type = /obj/item/ammo_casing/pistol/xo
+
 /obj/item/ammo_magazine/speedloader/rubber
 	labels = list("rubber")
 	ammo_type = /obj/item/ammo_casing/pistol/rubber
@@ -16,6 +20,14 @@
 	icon_state = "spdloader_magnum"
 	caliber = CALIBER_PISTOL_MAGNUM
 	ammo_type = /obj/item/ammo_casing/pistol/magnum
+	matter = list(MATERIAL_STEEL = 1440)
+	max_ammo = 6
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/speedloader/magnum/detective
+	icon_state = "spdloader_magnum_detective"
+	caliber = CALIBER_PISTOL_MAGNUM
+	ammo_type = /obj/item/ammo_casing/pistol/magnum/detective
 	matter = list(MATERIAL_STEEL = 1440)
 	max_ammo = 6
 	multiple_sprites = 1

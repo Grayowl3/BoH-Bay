@@ -8,9 +8,7 @@
 	offline_slowdown = 0
 	offline_vision_restriction = 0
 
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/storage/briefcase, /obj/item/weapon/storage/secure/briefcase)
-
-	req_access = list(access_lawyer)
+	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/storage/briefcase, /obj/item/weapon/storage/secure/briefcase,/obj/item/weapon/storage/)
 
 	glove_type = null
 	helm_type = null
@@ -62,10 +60,14 @@
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/stack/flag,/obj/item/weapon/storage/ore,/obj/item/device/t_scanner,/obj/item/weapon/pickaxe, /obj/item/weapon/rcd, /obj/item/weapon/storage/)
 
 /obj/item/clothing/head/helmet/space/rig/industrial
+	item_icons = list(slot_head_str = 'icons_manaos/mob/onmob/onmob_head.dmi')
+	icon = 'icons_manaos/obj/clothing/obj_head.dmi'
 	camera = /obj/machinery/camera/network/mining
 	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
 
 /obj/item/clothing/suit/space/rig/industrial
+	item_icons = list(slot_wear_suit_str = 'icons_manaos/mob/onmob/onmob_suit.dmi')
+	icon = 'icons_manaos/obj/clothing/obj_suit.dmi'
 	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_OLDUNATHI)
 
 /obj/item/clothing/shoes/magboots/rig/industrial
@@ -83,7 +85,8 @@
 		/obj/item/rig_module/device/orescanner,
 		/obj/item/rig_module/device/rcd,
 		/obj/item/rig_module/vision/meson,
-		/obj/item/rig_module/cooling_unit
+		/obj/item/rig_module/cooling_unit,
+		/obj/item/rig_module/maneuvering_jets
 		)
 
 /obj/item/weapon/rig/eva
@@ -320,13 +323,13 @@
 	desc = "A security hardsuit designed for prolonged EVA in dangerous environments."
 	icon_state = "hazard_rig"
 	armor = list(
-		melee = ARMOR_MELEE_MAJOR,
-		bullet = ARMOR_BALLISTIC_PISTOL,
-		laser = ARMOR_LASER_HANDGUNS,
+		melee = ARMOR_MELEE_VERY_HIGH,
+		bullet = ARMOR_BALLISTIC_RESISTANT,
+		laser = ARMOR_LASER_MAJOR,
 		energy = ARMOR_ENERGY_MINOR,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
-		rad = ARMOR_RAD_MINOR
+		rad = ARMOR_RAD_SHIELDED
 		)
 	online_slowdown = 1
 	offline_slowdown = 3
@@ -384,9 +387,9 @@
 	min_pressure_protection = 0
 
 
-	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit)
+	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/storage/)
 	//Bans the most common combat items, idea is that this isn't a mass built shouldergun rig.
-	banned_modules = list(/obj/item/rig_module/grenade_launcher,/obj/item/rig_module/mounted,/obj/item/rig_module/fabricator )
+	banned_modules = list(/obj/item/rig_module/grenade_launcher,/obj/item/rig_module/mounted,/obj/item/rig_module/fabricator)
 	req_access = list()
 
 /obj/item/clothing/head/helmet/space/rig/zero

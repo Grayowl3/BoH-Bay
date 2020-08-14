@@ -13,7 +13,7 @@
 	bone_material = null
 	skin_material = null
 
-	genders =                 list(PLURAL)
+	genders =                 list(PLURAL, NEUTER)
 	cyborg_noun =             null
 
 	icon_template =           'icons/mob/human_races/species/adherent/template.dmi'
@@ -95,7 +95,6 @@
 		BP_COOLING_FINS = /obj/item/organ/internal/powered/cooling_fins
 		)
 	move_trail = /obj/effect/decal/cleanable/blood/tracks/snake
-	max_players = 3
 
 	base_skin_colours = list(
 		"Turquoise"   = "",

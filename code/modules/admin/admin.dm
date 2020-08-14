@@ -83,6 +83,7 @@ var/global/floorIsLava = 0
 
 	if(M.client)
 		body += "| <A HREF='?src=\ref[src];sendtoprison=\ref[M]'>Prison</A> | "
+		body += "\ <A HREF='?src=\ref[src];sendbacktolobby=\ref[M]]'>Send back to Lobby</A> | "
 		var/muted = M.client.prefs.muted
 		body += {"<br><b>Mute: </b>
 			\[<A href='?src=\ref[src];mute=\ref[M];mute_type=[MUTE_IC]'><font color='[(muted & MUTE_IC)?"red":"blue"]'>IC</font></a> |
@@ -136,6 +137,9 @@ var/global/floorIsLava = 0
 			body += "</tr>"
 		body += "</table>"
 
+	if(!check_rights(R_ADMIN))
+		body += "<A href='?src=holder;Bless=\ref[M]'>Bless</A> | "
+
 	if (M.client)
 		if(!istype(M, /mob/new_player))
 			body += "<br><br>"
@@ -169,6 +173,8 @@ var/global/floorIsLava = 0
 				body += "<A href='?src=\ref[src];makeanimal=\ref[M]'>Re-Animalize</A> | "
 			else
 				body += "<A href='?src=\ref[src];makeanimal=\ref[M]'>Animalize</A> | "
+			if(istype(M))
+				body += "<A href='?src=\ref[src];incarn_ghost=\ref[M]'>Re-incarnate</A> | "
 
 			// DNA2 - Admin Hax
 			if(M.dna && iscarbon(M))

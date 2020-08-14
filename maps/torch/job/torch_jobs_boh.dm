@@ -283,6 +283,10 @@
 
 // Security
 /datum/job/warden
+	title = "Brig Chief"
+	alt_titles = list(
+		"Warden"
+	)
 	allowed_branches = list(
 		/datum/mil_branch/fleet,
 		/datum/mil_branch/marine_corps = /decl/hierarchy/outfit/job/torch/crew/security/brig_chief/marine
@@ -369,10 +373,12 @@
 		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/marine_corps/e1,
 		/datum/mil_rank/marine_corps/e2,
 		/datum/mil_rank/marine_corps/e3,
-		/datum/mil_rank/marine_corps/e4
+		/datum/mil_rank/marine_corps/e4,
+		/datum/mil_rank/marine_corps/e5
 	)
 
 /datum/job/chef
@@ -386,9 +392,11 @@
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/marine_corps/e2,
 		/datum/mil_rank/marine_corps/e3,
-		/datum/mil_rank/marine_corps/e4
+		/datum/mil_rank/marine_corps/e4,
+		/datum/mil_rank/marine_corps/e5
 	)
 
 /datum/job/crew
@@ -400,9 +408,11 @@
 		/datum/mil_rank/fleet/e2,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/marine_corps/e2,
 		/datum/mil_rank/marine_corps/e3,
-		/datum/mil_rank/marine_corps/e4
+		/datum/mil_rank/marine_corps/e4,
+		/datum/mil_rank/marine_corps/e5
 	)
 /***/
 
@@ -434,9 +444,11 @@
 		/datum/mil_rank/fleet/e2_exp,
 		/datum/mil_rank/fleet/e3,
 		/datum/mil_rank/fleet/e4,
+		/datum/mil_rank/fleet/e5,
 		/datum/mil_rank/marine_corps/e2,
 		/datum/mil_rank/marine_corps/e3,
 		/datum/mil_rank/marine_corps/e4,
+		/datum/mil_rank/marine_corps/e5,
 		/datum/mil_rank/civ/contractor
 	)
 /***/
@@ -455,6 +467,16 @@
 	return "You are the Loss Prevention Associate. Your job is to prevent the loss of the Liason's life - even at the cost of your own. Good luck."
 /***/
 
+// Law
+/datum/job/blueshield
+	allowed_branches = list(/datum/mil_branch/private_security, /datum/mil_branch/civilian, /datum/mil_branch/solgov)
+	allowed_ranks = list(/datum/mil_rank/civ/contractor)
+
+/datum/job/bodyguard/get_description_blurb()
+	return "Eres un Blueshield, te encargas de proteger la vida del personal de Alto riesgo abordo del NTSS Dagon, NO eres seguridad. Respondes directamente al comandante oficial y a Comando Central."
+
+/***/
+
 // Misc
 /datum/job/assistant
 	skill_points = 18
@@ -468,7 +490,7 @@
 /////////
 /datum/job/flag
 	title = "Flag Officer"
-	department = "Support"
+	department = "Soporte"
 	department_flag = SPT
 	total_positions = 1
 	spawn_positions = 1

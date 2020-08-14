@@ -6,6 +6,10 @@
 	icon_state = "pistolcasing"
 	spent_icon = "pistolcasing-spent"
 
+/obj/item/ammo_casing/pistol/xo
+	desc = "A rubber pistol bullet casing."
+	projectile_type = /obj/item/projectile/bullet/pistol/xo
+
 /obj/item/ammo_casing/pistol/rubber
 	desc = "A rubber pistol bullet casing."
 	projectile_type = /obj/item/projectile/bullet/pistol/rubber
@@ -38,6 +42,12 @@
 	caliber = CALIBER_PISTOL_MAGNUM
 	projectile_type = /obj/item/projectile/bullet/pistol/strong
 	icon_state = "magnumcasing"
+	spent_icon = "magnumcasing-spent"
+
+/obj/item/ammo_casing/pistol/magnum/detective
+	name = "Una bala paralizante semi letal."
+	projectile_type = /obj/item/projectile/bullet/pistol/rev38
+	icon_state = "detectivecasing"
 	spent_icon = "magnumcasing-spent"
 
 /obj/item/ammo_casing/pistol/throwback

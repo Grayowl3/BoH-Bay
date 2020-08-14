@@ -218,9 +218,9 @@
 	name = "gyne utility exosuit"
 	armor = list(
 		melee = ARMOR_MELEE_VERY_HIGH,
-		bullet = ARMOR_BALLISTIC_RESISTANT,
-		laser = ARMOR_LASER_MAJOR,
-		energy = ARMOR_ENERGY_RESISTANT,
+		bullet = ARMOR_BALLISTIC_RIFLE,
+		laser = ARMOR_LASER_RIFLES,
+		energy = ARMOR_ENERGY_SHIELDED,
 		bomb = ARMOR_BOMB_RESISTANT,
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
@@ -302,11 +302,10 @@
 		)
 	allowed = list(
 		/obj/item/clustertool,
-		/obj/item/weapon/gun/energy/particle/small,
+		/obj/item/weapon/gun,
 		/obj/item/weapon/weldingtool/electric/mantid,
 		/obj/item/device/multitool/mantid,
 		/obj/item/stack/medical/resin,
-		/obj/item/weapon/gun/energy/particle/support,
 		/obj/item/weapon/reagent_containers/food/drinks/cans/waterbottle/ascent
 	)
 

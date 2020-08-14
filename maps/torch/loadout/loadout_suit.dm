@@ -46,7 +46,6 @@
 	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/labcoat
-	allowed_roles = DOCTOR_ROLES
 
 /datum/gear/suit/labcoat_corp
 	allowed_roles = DOCTOR_ROLES
@@ -73,13 +72,39 @@
 	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/leather
-	allowed_branches = CASUAL_BRANCHES
 
 /datum/gear/suit/wintercoat
 
 /datum/gear/suit/track
 	allowed_roles = CASUAL_ROLES
 	allowed_branches = CASUAL_BRANCHES
+
+/datum/gear/suit/wintercoat_capitan
+	allowed_roles = list(/datum/job/captain)
+
+/datum/gear/suit/wintercoat_cargo
+	allowed_roles = list(/datum/job/qm, /datum/job/cargo_tech, /datum/job/mining)
+
+/datum/gear/suit/wintercoat_ingenieria
+	allowed_roles = list(/datum/job/senior_engineer, /datum/job/engineer, /datum/job/engineer_trainee, /datum/job/roboticist)
+
+/datum/gear/suit/wintercoat_atmos
+	allowed_roles = list(/datum/job/senior_engineer, /datum/job/engineer, /datum/job/engineer_trainee)
+
+/datum/gear/suit/wintercoat_botanica
+	allowed_roles = list(/datum/job/assistant, /datum/job/scientist)
+
+/datum/gear/suit/wintercoat_medicina
+	allowed_roles = MEDICAL_ROLES
+
+/datum/gear/suit/wintercoat_mineria
+	allowed_roles = list(/datum/job/qm, /datum/job/cargo_tech, /datum/job/mining)
+
+/datum/gear/suit/wintercoat_seguridad
+	allowed_roles = SECURITY_ROLES
+
+/datum/gear/suit/wintercoat_ciencias
+	allowed_roles = RESEARCH_ROLES
 
 /datum/gear/tactical/pcarrier
 	display_name = "plate carrier selection"

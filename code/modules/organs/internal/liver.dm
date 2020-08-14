@@ -1,6 +1,6 @@
 
 /obj/item/organ/internal/liver
-	name = "liver"
+	name = "higado"
 	icon_state = "liver"
 	w_class = ITEM_SIZE_SMALL
 	organ_tag = BP_LIVER
@@ -8,7 +8,7 @@
 	min_bruised_damage = 25
 	min_broken_damage = 45
 	max_damage = 70
-	relative_size = 60
+	relative_size = 50
 
 /obj/item/organ/internal/liver/robotize()
 	. = ..()
@@ -22,7 +22,7 @@
 
 	if (germ_level > INFECTION_LEVEL_ONE)
 		if(prob(1))
-			to_chat(owner, "<span class='danger'>Your skin itches.</span>")
+			to_chat(owner, "<span class='danger'>Te pica la piel</span>")
 	if (germ_level > INFECTION_LEVEL_TWO)
 		if(prob(1))
 			spawn owner.vomit()

@@ -132,6 +132,12 @@
 	arterial_bleed_chance_multiplier = 1.2
 	distance_falloff = 4
 
+/obj/item/projectile/bullet/pistol/xo
+	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
+	damage = 45
+	armor_penetration = 10
+	distance_falloff = 3
+
 /obj/item/projectile/bullet/pistol/strong
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
 	damage = 50
@@ -140,6 +146,15 @@
 	distance_falloff = 2.5
 	armor_penetration = 15
 
+/obj/item/projectile/bullet/pistol/rev38 //balas para el detective, especiales - Fox
+	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
+	damage = 5
+	shrapnel_chance_multiplier = 0.8
+	arterial_bleed_chance_multiplier = 0.8
+	distance_falloff = 3
+
+//"rubber" bullets
+//Armor pen is to prevent them from being invalidated by ARMOR_BALLISTIC_MINOR, as has been the case.
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
 	name = "rubber bullet"
 	damage_flags = 0
@@ -166,7 +181,7 @@
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 	damage = 60
 	armor_penetration = 10
-	distance_falloff = 2.5
+	distance_falloff = 1.5
 
 /obj/item/projectile/bullet/shotgun/beanbag		//because beanbags are not bullets
 	name = "beanbag"
@@ -181,7 +196,8 @@
 /obj/item/projectile/bullet/pellet/shotgun
 	name = "shrapnel"
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
-	damage = 30
+	damage = 35
+	armor_penetration = 5
 	pellets = 6
 	range_step = 1
 	spread_step = 10
@@ -198,7 +214,7 @@
 
 /obj/item/projectile/bullet/rifle/military
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
-	damage = 40
+	damage = 35
 	armor_penetration = 35
 	shrapnel_chance_multiplier = 1
 	arterial_bleed_chance_multiplier = 1

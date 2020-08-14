@@ -134,6 +134,114 @@
 	desc = ""
 	icon_state = "fenears"
 
+/datum/sprite_accessory/ears/tajplain
+	name = "Plain Tajaran Ears"
+	icon_state = "ears_plain"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajbangs
+	name = "Tajaran Bangs"
+	icon_state = "hair_bangs"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajbob
+	name = "Tajaran Bob"
+	icon_state = "hair_bob"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajbraid
+	name = "Tajaran Braid"
+	icon_state = "hair_braid"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajclean
+	name = "Tajaran Clean"
+	icon_state = "hair_clean"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajcurly
+	name = "Tajaran Curly"
+	icon_state = "hair_curly"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajfingerwave
+	name = "Tajaran Fingerwave"
+	icon_state = "hair_fingerwave"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajgreaser
+	name = "Tajaran Greaser"
+	icon_state = "hair_greaser"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajhousewife
+	name = "Tajaran Housewife"
+	icon_state = "hair_housewife"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajlong
+	name = "Tajaran Long"
+	icon_state = "hair_long"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajmessy
+	name = "Tajaran Messy"
+	icon_state = "hair_messy"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajmohawk
+	name = "Tajaran Mohawk"
+	icon_state = "hair_mohawk"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajplait
+	name = "Tajaran Plait"
+	icon_state = "hair_plait"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajrattail
+	name = "Tajaran Rat Tail"
+	icon_state = "hair_rattail"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajshaggy
+	name = "Tajaran Shaggy"
+	icon_state = "hair_shaggy"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajspiky
+	name = "Tajaran Spiky"
+	icon_state = "hair_spiky"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajstraight
+	name = "Tajaran Straight"
+	icon_state = "hair_straight"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/tajvictory
+	name = "Tajaran Victory"
+	icon_state = "hair_victory"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
 /datum/sprite_accessory/ears/foxearshc
 	name = "highlander zorren ears, colorable"
 	desc = ""
@@ -872,12 +980,21 @@
 	color_blend_mode = ICON_MULTIPLY
 	extra_overlay = "deertail_mark"
 
+
+/datum/sprite_accessory/tail/special/tajaran
+	name = "tajaran tail"
+	desc = ""
+	icon_state = "tajtail_loop1"
+	ani_state = "tajtail_loop1"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
+
 /*
 //For all species tails. Includes haircolored tails.
 /datum/sprite_accessory/tail/special
 	name = "Blank tail. Do not select."
 	icon = 'icons/effects/species_tails_vr.dmi'
-
 /datum/sprite_accessory/tail/special/unathi
 	name = "unathi tail"
 	desc = ""
@@ -885,12 +1002,7 @@
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
 
-/datum/sprite_accessory/tail/special/tajaran
-	name = "tajaran tail"
-	desc = ""
-	icon_state = "tajtail_s"
-	do_colouration = 1
-	color_blend_mode = ICON_MULTIPLY
+
 
 /datum/sprite_accessory/tail/special/sergal
 	name = "sergal tail"
@@ -898,58 +1010,48 @@
 	icon_state = "sergtail_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/akula
 	name = "akula tail"
 	desc = ""
 	icon_state = "sharktail_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/nevrean
 	name = "nevrean tail"
 	desc = ""
 	icon_state = "nevreantail_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/armalis
 	name = "armalis tail"
 	desc = ""
 	icon_state = "armalis_tail_humanoid_s"
-
 /datum/sprite_accessory/tail/special/xenodrone
 	name = "xenomorph drone tail"
 	desc = ""
 	icon_state = "xenos_drone_tail_s"
-
 /datum/sprite_accessory/tail/special/xenosentinel
 	name = "xenomorph sentinel tail"
 	desc = ""
 	icon_state = "xenos_sentinel_tail_s"
-
 /datum/sprite_accessory/tail/special/xenohunter
 	name = "xenomorph hunter tail"
 	desc = ""
 	icon_state = "xenos_hunter_tail_s"
-
 /datum/sprite_accessory/tail/special/xenoqueen
 	name = "xenomorph queen tail"
 	desc = ""
 	icon_state = "xenos_queen_tail_s"
-
 /datum/sprite_accessory/tail/special/monkey
 	name = "monkey tail"
 	desc = ""
 	icon_state = "chimptail_s"
-
 /datum/sprite_accessory/tail/special/seromitail
 	name = "seromi tail"
 	desc = ""
 	icon_state = "seromitail_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/seromitailfeathered
 	name = "seromi tail w/ feathers"
 	desc = ""
@@ -957,106 +1059,90 @@
 	extra_overlay = "seromitail_feathers_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/unathihc
 	name = "unathi tail, colorable"
 	desc = ""
 	icon_state = "sogtail_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/tajaranhc
 	name = "tajaran tail, colorable"
 	desc = ""
 	icon_state = "tajtail_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/sergalhc
 	name = "sergal tail, colorable"
 	desc = ""
 	icon_state = "sergtail_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/akulahc
 	name = "akula tail, colorable"
 	desc = ""
 	icon_state = "sharktail_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/nevreanhc
 	name = "nevrean tail, colorable"
 	desc = ""
 	icon_state = "nevreantail_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/foxhc
 	name = "highlander zorren tail, colorable"
 	desc = ""
 	icon_state = "foxtail_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/fennechc
 	name = "flatland zorren tail, colorable"
 	desc = ""
 	icon_state = "fentail_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/armalishc
 	name = "armalis tail, colorable"
 	desc = ""
 	icon_state = "armalis_tail_humanoid_hc_s"
 	do_colouration = 1
-
 /datum/sprite_accessory/tail/special/xenodronehc
 	name = "xenomorph drone tail, colorable"
 	desc = ""
 	icon_state = "xenos_drone_tail_hc_s"
 	do_colouration = 1
-
 /datum/sprite_accessory/tail/special/xenosentinelhc
 	name = "xenomorph sentinel tail, colorable"
 	desc = ""
 	icon_state = "xenos_sentinel_tail_hc_s"
 	do_colouration = 1
-
 /datum/sprite_accessory/tail/special/xenohunterhc
 	name = "xenomorph hunter tail, colorable"
 	desc = ""
 	icon_state = "xenos_hunter_tail_hc_s"
 	do_colouration = 1
-
 /datum/sprite_accessory/tail/special/xenoqueenhc
 	name = "xenomorph queen tail, colorable"
 	desc = ""
 	icon_state = "xenos_queen_tail_hc_s"
 	do_colouration = 1
-
 /datum/sprite_accessory/tail/special/monkeyhc
 	name = "monkey tail, colorable, colorable"
 	desc = ""
 	icon_state = "chimptail_hc_s"
 	do_colouration = 1
-
 /datum/sprite_accessory/tail/special/seromitailhc
 	name = "seromi tail, colorable"
 	desc = ""
 	icon_state = "seromitail_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/seromitailfeatheredhc
 	name = "seromi tail w/ feathers, colorable"
 	desc = ""
 	icon_state = "seromitail_feathers_hc_s"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
-
 /datum/sprite_accessory/tail/special/vulpan
 	name = "vulpkanin, colorable"
 	desc = ""
@@ -1465,6 +1551,14 @@
 	icon_state = "raccoon_tail"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/tail/striped_tail
+	name = "Striped tail, colorable"
+	desc = ""
+	icon_state = "stripedtail_colorable"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	extra_overlay = "stripedtail_colorable_w"
 
 /datum/sprite_accessory/tail/Easterntail
 	name = "Eastern Dragon (Animated)"
